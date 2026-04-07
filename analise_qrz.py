@@ -1353,8 +1353,8 @@ if st.session_state.df_tarefas is not None and st.session_state.indicadores is n
                                 Apresente a resposta em formato de texto simples, sem formatação HTML."""},
                                 {"role": "user", "content": resumo_llm}
                             ],
-                            model="llama-3.3-70b-versatile",
-                            temperature=0.2,
+                            model="openai/gpt-oss-20b",
+                            temperature=0.3,
                             max_tokens=4096,
                         )
                         
